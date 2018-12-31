@@ -5,7 +5,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { ClientsComponent} from './components/clients/clients.component';
 
 const appRoutes: Routes = [
   {
@@ -60,7 +60,7 @@ const appRoutes: Routes = [
   },
 
   { path: 'login', component: LoginComponent },
-
+  { path: 'clients', component: ClientsComponent },
   { path: '', component: LoginComponent },
   { path: '**', component: LoginComponent },
 ];
